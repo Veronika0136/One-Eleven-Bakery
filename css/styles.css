@@ -1,0 +1,18 @@
+:root {
+    /* font */
+    --main-font: "Roboto Condensed", sans-serif;
+    
+    /* txt colors */
+    --main-txt-cl:#F19000; ;
+    --accent-txt-cl:#FFF ;
+   
+    /* bg colors */
+    --dark-bg-cl: ;
+    
+    /* others */
+  }
+
+  body {
+    font-family: var(--main-font);
+    color: var(--main-txt-cl);
+  }
