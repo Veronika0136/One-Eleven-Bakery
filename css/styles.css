@@ -1,18 +1,33 @@
 :root {
-    /* font */
-    --main-font: "Roboto Condensed", sans-serif;
-    
-    /* txt colors */
-    --main-txt-cl:#F19000; ;
-    --accent-txt-cl:#FFF ;
-   
-    /* bg colors */
-    --dark-bg-cl: ;
-    
-    /* others */
-  }
+  /* font */
+  --main-font: "Roboto Condensed", sans-serif;
 
-  body {
-    font-family: var(--main-font);
-    color: var(--main-txt-cl);
-  }
+  /* txt colors */
+  --main-txt-cl: #f19000;
+  --accent-txt-cl: #fff;
+
+  /* bg colors */
+  --bg-cl: ;
+
+  /* others */
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-txt-cl);
+}
+
+/* reset styles */
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.list {
+  list-style: none;
+}
+
+/* Header */
+.header-nav-link {
+  font-size: 20px;
+  line-height: calc(40 / 20);
+}
