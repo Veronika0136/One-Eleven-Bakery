@@ -30,4 +30,101 @@ body {
 .header-nav-link {
   font-size: 20px;
   line-height: calc(40 / 20);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header-link {
+  font-size: 20px;
+  line-height: calc(40 / 20);
+  text-align: center;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-link:hover,
+.header-link:focus,
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-txt-cl);
+}
+
+/* Hero */
+.hero-title {
+  font-size: 36px;
+  line-height: calc(72 / 36);
+  color: var(--accent-txt-cl);
+  text-align: center;
+}
+
+.hero-subtitle {
+  font-size: 36px;
+  line-height: calc(72 / 36);
+  color: var(--accent-txt-cl);
+  text-align: center;
+}
+
+/* Advantages */
+
+.advantages-title {
+}
+
+.advantages-text {
+  line-height: calc(32 / 16);
+  text-transform: uppercase;
+}
+
+.light-text {
+  color: var(--accent-txt-cl);
+}
+
+/* Product range */
+
+.products-title {
+  font-size: 24px;
+  line-height: calc(48 / 24);
+  color: var(--accent-txt-cl);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.products-subtitle {
+  line-height: calc(32 / 16);
+  text-transform: uppercase;
+  color: var(--accent-txt-cl);
+  text-align: center;
+}
+
+.products-text {
+  font-size: 12px;
+  line-height: calc(24 / 12);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.products-newstitle {
+  font-size: 24px;
+  line-height: calc(48 / 24);
+  color: var(--accent-txt-cl);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Delivery */
+
+.delivery-title {
+}
+
+.delivery-list-text {
+  font-size: 24px;
+  line-height: calc(48 / 24);
+  text-align: center;
+}
+
+/* Footer */
+
+.footer-link {
+  font-size: 24px;
+  line-height: calc(48 / 24);
+  text-align: center;
 }
