@@ -19,7 +19,13 @@ body {
 
 /* reset styles */
 
-h1,h2,h3,h4,h5,h6,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -28,11 +34,10 @@ h1,h2,h3,h4,h5,h6,p{
   color: currentColor;
 }
 
-.list{
+.list {
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 
 .visually-hidden {
@@ -42,19 +47,47 @@ h1,h2,h3,h4,h5,h6,p{
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+ /* base styles*/
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
 /* Header */
+.header {
+  background-color: black;
+}
+.header-container{
+  display: flex;
+}
+.logo{
+  margin-right: 184px;
+}
+.header-nav-list{
+  display: flex;
+}
 .header-nav-link {
   font-size: 20px;
   line-height: calc(40 / 20);
   text-align: center;
   text-transform: uppercase;
 }
+
+
 
 .header-link {
   font-size: 20px;
@@ -72,6 +105,9 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 /* Hero */
+.hero {
+  background-color: black;
+}
 .hero-title {
   font-size: 36px;
   line-height: calc(72 / 36);
@@ -87,7 +123,9 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 /* Advantages */
-
+.advantages {
+  background-color: black;
+}
 .advantages-title {
 }
 
@@ -101,6 +139,9 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 /* Product range */
+.products {
+  background-color: black;
+}
 
 .products-title {
   font-size: 24px;
@@ -133,7 +174,9 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 /* Delivery */
-
+.delivery {
+  background-color: black;
+}
 .delivery-title {
 }
 
@@ -144,7 +187,9 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 /* Footer */
-
+.footer {
+  background-color: black;
+}
 .footer-link {
   font-size: 24px;
   line-height: calc(48 / 24);
