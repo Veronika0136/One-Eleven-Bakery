@@ -117,7 +117,7 @@ img {
 .header-list {
   display: flex;
   gap: 20px;
-  align-items: flex-end;
+  align-items: center;
 }
 .header-link {
   font-size: 20px;
@@ -128,16 +128,14 @@ img {
 }
 
 .socials-link {
+  padding-top: 34px;
+  padding-bottom: 34px;
 }
 
-.socials-icon-tg {
- 
+.socials-link:hover.socials-icon {
+  fill: var(--main-txt-cl);
 }
 
-.socials-icon-inst {
- 
-
-}
 
 .header-nav-link:hover,
 .header-nav-link:focus,
