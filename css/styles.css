@@ -66,11 +66,16 @@ img {
   margin-left: auto;
   padding-left: 100px;
   padding-right: 100px;
-
   outline: 2px solid red;
   outline-offset: -2px;
+
 }
 
+.section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+ 
+}
 /* Header */
 .header {
   background-color: black;
@@ -202,12 +207,11 @@ img {
 }
 
 .products-list-item {
-  
   width: 280px;
   height: 350px;
 }
 
-.products-list-img{
+.products-list-img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border: 1px solid #fff;
@@ -224,17 +228,15 @@ img {
   padding-right: 20px;
 }
 
-.products-wrapper-last{
- padding-top: 40px;
- height: 100px;
+.products-wrapper-last {
+  padding-top: 40px;
+  height: 100px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border: 1px solid #fff;
   border-top: none;
- 
 }
 .products-subtitle {
-
   text-transform: uppercase;
   color: var(--accent-txt-cl);
   text-align: center;
@@ -260,13 +262,30 @@ img {
 .delivery {
   background-color: black;
 }
+
+.delivery-container {
+  padding-left: 235px;
+  padding-right: 235px;
+}
 .delivery-title {
 }
+
+.delivery-list {
+  border-radius: 20px;
+  border: 1px solid #f19000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
 
 .delivery-list-text {
   font-size: 24px;
   line-height: calc(48 / 24);
   text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Footer */
