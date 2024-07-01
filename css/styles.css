@@ -132,10 +132,20 @@ img {
   padding-bottom: 34px;
 }
 
-.socials-link:hover.socials-icon {
-  fill: var(--main-txt-cl);
+.socials-link:hover,
+.socials-link:focus .socials-icon rect {
+  fill: var(--main-txt-cl); 
+  --color3: var(--main-txt-cl);
 }
 
+.socials-icon{
+  
+}
+
+
+.socials-icon:hover rect {
+  fill: var(--main-txt-cl); 
+}
 
 .header-nav-link:hover,
 .header-nav-link:focus,
