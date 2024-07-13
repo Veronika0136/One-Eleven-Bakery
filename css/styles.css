@@ -354,13 +354,35 @@ img {
   text-align: center;
 }
 
+.products-blok{
+  border: 1px solid #fffff00;
+  overflow: hidden;
+
+}
+
+.products-blok-anim{
+  animation: running-text 10s linear infinite;
+
+}
 .products-newstitle {
   font-size: 24px;
   line-height: calc(48 / 24);
   color: var(--accent-txt-cl);
   text-transform: uppercase;
   text-align: center;
+  display:inline-block;
 }
+
+@keyframes running-text {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 
 /* Delivery */
 .delivery {
