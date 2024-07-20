@@ -1,0 +1,25 @@
+.advantages__container {
+    padding-right: 150px;
+    padding-left: 150px;}
+  
+  
+  .advantages__item {
+    display: flex;
+    align-items: center;
+    gap: 160px;
+  }
+  
+  .advantages__img {
+    border-radius: 50px;
+    margin-bottom: 25px;
+  }
+  
+  .advantages__text {
+    line-height: calc(32 / 16);
+    text-transform: uppercase;
+  }
+ 
+
+  .text--light {
+    color: var(--accent-txt-cl);
+  }
