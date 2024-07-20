@@ -1,0 +1,18 @@
+.blok {
+    border: 1px solid #FFFFF00;
+    overflow: hidden}
+  
+  
+  
+.blok__anim {
+    animation: running-text 10s linear infinite;
+  }
+  
+.blok__newstitle {
+    font-size: 24px;
+    line-height: calc(48 / 24);
+    color: var(--accent-txt-cl);
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+  }
