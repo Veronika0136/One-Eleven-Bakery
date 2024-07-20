@@ -1,7 +1,7 @@
 :root {
   /* font */
   --main-font: "Roboto Condensed", sans-serif;
-  --second-font:"Lobster",sans-serif;
+  --second-font: "Lobster", sans-serif;
 
   /* txt colors */
   --main-txt-cl: #f19000;
@@ -9,7 +9,6 @@
 
   /* bg colors */
   --bg-img: url(../imanges/bg.jpg);
-
 
   /* others */
 }
@@ -77,9 +76,7 @@ img {
 }
 /* Header */
 
-.header {
-}
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -90,70 +87,63 @@ img {
   padding-bottom: 5px;
 }
 
-.header-nav {
+.nav {
   margin-right: auto;
 }
 
-.header-nav-list {
+.nav__list {
   display: flex;
   gap: 30px;
 }
 
-/* .header-nav-list-item {
-  margin-right: 10px;
-}
-
-.header-nav-list-item:last-child {
-  margin-right: 0;
-} */
-
-.header-nav-link {
+.nav__link {
   font-size: 20px;
   line-height: calc(40 / 20);
   text-align: center;
   text-transform: uppercase;
   padding-top: 34px;
   padding-bottom: 34px;
+
+  &:hover,
+  &:focus {
+  color: var(--accent-txt-cl);}
 }
 
-.header-list {
+.contaсts__list {
   display: flex;
   gap: 20px;
   align-items: center;
 }
-.header-link {
+
+.contaсts__link {
   font-size: 20px;
   line-height: calc(40 / 20);
   text-align: center;
   padding-top: 34px;
   padding-bottom: 34px;
-}
 
-.socials-link {
+    &:hover,
+    &:focus {
+  color: var(--accent-txt-cl);}
+}
+  
+.socials__link {
   padding-top: 34px;
   padding-bottom: 34px;
+
+   &:hover,
+   &:focus {
+    fill: var(--main-txt-cl);
+     --color3: var(--main-txt-cl);}
 }
 
-.socials-link:hover,
-.socials-link:focus .socials-icon rect {
+.socials--link:focus .socials__icon rect {
   fill: var(--main-txt-cl);
   --color3: var(--main-txt-cl);
 }
 
-.socials-icon {
-}
-
-.socials-icon:hover rect {
+.socials__icon:hover rect {
   fill: var(--main-txt-cl);
-}
-
-.header-nav-link:hover,
-.header-nav-link:focus,
-.header-link:hover,
-.header-link:focus,
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-txt-cl);
 }
 
 /* Hero */
@@ -167,14 +157,6 @@ img {
   height: 670px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.hero-container{
-  
-}
-
-
-.carousel {
 }
 
 .slide {
@@ -192,11 +174,8 @@ img {
   opacity: 1;
 }
 
-
-.hero-title {
-
+.hero__title {
   font-family: var(--second-font);
-  
   font-size: 36px;
   line-height: calc(72 / 36);
   color: var(--main-txt-cl);
@@ -207,22 +186,21 @@ img {
   margin-right: 755px;
 }
 
-.hero-subtitle {
+.hero__subtitle {
   font-family: var(--second-font);
-  
+
   font-size: 36px;
   line-height: calc(36 / 36);
   color: var(--accent-txt-cl);
   text-align: center;
   margin-left: 610px;
-  
 }
 
-.text-container {
+.text__container {
   font-size: 2em;
 }
 
-.animated-text {
+.text--animated {
   opacity: 0;
   display: inline-block;
   animation: fadeIn 0.5s forwards;
@@ -234,17 +212,16 @@ img {
   }
 }
 
-.animated-text span {
+.text--animated span {
   opacity: 0;
 }
 
-.animated-text span.fade {
+.text--animated span.fade {
   opacity: 1;
   transition: opacity 0.1s;
 }
 
-.animated-subtitle {
- 
+.subtitle--animated {
   animation: fadeInOut 4s infinite;
 }
 
@@ -259,42 +236,40 @@ img {
 }
 
 /* Advantages */
-.advantages {
-}
 
-.advantages-container {
+.advantages__container {
   padding-right: 150px;
   padding-left: 150px;
 }
 
-.advantages-list-item {
+.advantages__item {
   display: flex;
   align-items: center;
   gap: 160px;
 }
 
-.advantages-img {
+.advantages__img {
   border-radius: 50px;
   margin-bottom: 25px;
 }
-.advantages-text {
+
+.advantages__text {
   line-height: calc(32 / 16);
   text-transform: uppercase;
 }
 
-.light-text {
+.text--light {
   color: var(--accent-txt-cl);
 }
 
 /* Product range */
-.products {
-}
 
-.products-container {
+.products__container {
   padding-right: 140px;
   padding-left: 140px;
 }
-.products-title {
+
+.products__title {
   font-size: 24px;
   line-height: calc(48 / 24);
   color: var(--accent-txt-cl);
@@ -303,25 +278,26 @@ img {
   margin-bottom: 20px;
 }
 
-.products-list {
+.products__list {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 40px;
 }
 
-.products-list-item {
+.products__item {
   width: 280px;
   height: 350px;
 }
 
-.products-list-img {
+.products__img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border: 1px solid #fff;
   border-bottom: none;
 }
-.products-wrapper {
+
+.products__wrapper {
   height: 100px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -332,7 +308,7 @@ img {
   padding-right: 20px;
 }
 
-.products-wrapper-last {
+.products__wrapper--last {
   padding-top: 40px;
   height: 100px;
   border-bottom-left-radius: 20px;
@@ -340,37 +316,37 @@ img {
   border: 1px solid #fff;
   border-top: none;
 }
-.products-subtitle {
+
+.products__subtitle {
   text-transform: uppercase;
   color: var(--accent-txt-cl);
   text-align: center;
   margin-bottom: 10px;
 }
 
-.products-text {
+.products__text {
   font-size: 12px;
   line-height: calc(24 / 12);
   text-transform: uppercase;
   text-align: center;
 }
 
-.products-blok{
+.blok {
   border: 1px solid #fffff00;
   overflow: hidden;
-
 }
 
-.products-blok-anim{
+.blok__anim {
   animation: running-text 10s linear infinite;
-
 }
-.products-newstitle {
+
+.blok__newstitle {
   font-size: 24px;
   line-height: calc(48 / 24);
   color: var(--accent-txt-cl);
   text-transform: uppercase;
   text-align: center;
-  display:inline-block;
+  display: inline-block;
 }
 
 @keyframes running-text {
@@ -383,19 +359,14 @@ img {
   }
 }
 
-
 /* Delivery */
-.delivery {
-}
 
-.delivery-container {
+.delivery__container {
   padding-left: 235px;
   padding-right: 235px;
 }
-.delivery-title {
-}
 
-.delivery-list {
+.delivery__list {
   border-radius: 20px;
   border: 1px solid #f19000;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -405,7 +376,7 @@ img {
   padding-bottom: 5px;
 }
 
-.delivery-list-text {
+.delivery__text {
   font-size: 24px;
   line-height: calc(48 / 24);
   text-align: center;
@@ -413,14 +384,12 @@ img {
 }
 
 /* Footer */
-.footer {
-}
-
-.footer-container {
+.footer__container {
   display: flex;
   align-items: center;
 }
-.footer-link {
+
+.footer__link {
   font-size: 24px;
   line-height: calc(48 / 24);
   text-align: center;
@@ -428,9 +397,8 @@ img {
   padding-bottom: 34px;
   margin-left: 60px;
   margin-right: 315px;
-}
-
-.footer-list {
-  display: flex;
-  gap: 20px;
+  
+    &:hover,
+    &:focus {
+  color: var(--accent-txt-cl);}
 }
