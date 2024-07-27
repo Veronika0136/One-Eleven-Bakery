@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   /* font */
   --main-font: "Roboto Condensed", sans-serif;
@@ -79,6 +78,13 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width: 320px) {
+  .container {
+    width: 290px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 450px;
@@ -113,9 +119,20 @@ img {
 }
 
 .logo {
-  margin-right: 184px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media screen and (min-widht: 768px) {
+  .logo {
+    margin-right: 85px;
+  }
+}
+@media screen and (min-widht: 1200px) {
+  .logo {
+    margin-right: 184px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 .slide {
@@ -174,13 +191,55 @@ img {
   display: inline-block;
 }
 
+.menu-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.menu-container {
+  margin-left: auto;
+  max-width: 300px;
+  height: 100%;
+  background-color: var(--bg-img);
+  padding: 90px 50px;
+}
+
 .header__container {
   display: flex;
   align-items: center;
 }
 
+.header__phone {
+  display: none;
+  font-size: 20px;
+  line-height: 2;
+  text-align: center;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+.header__phone:hover, .header__phone:focus {
+  color: var(--accent-txt-cl);
+}
+
 .nav {
-  margin-right: auto;
+  display: none;
+  /*margin-right: auto;*/
 }
 
 .nav__list {
@@ -200,21 +259,11 @@ img {
   color: var(--accent-txt-cl);
 }
 
-.contaсts__list {
-  display: flex;
+.socials__list {
+  display: none;
+  /*display: flex;
   gap: 20px;
-  align-items: center;
-}
-
-.contaсts__link {
-  font-size: 20px;
-  line-height: 2;
-  text-align: center;
-  padding-top: 34px;
-  padding-bottom: 34px;
-}
-.contaсts__link:hover, .contaсts__link:focus {
-  color: var(--accent-txt-cl);
+  align-items: center;*/
 }
 
 .socials__link {
@@ -416,7 +465,7 @@ img {
   align-items: center;
 }
 
-.footer__link {
+.footer__phone {
   font-size: 24px;
   line-height: 2;
   text-align: center;
@@ -425,6 +474,6 @@ img {
   margin-left: 60px;
   margin-right: 315px;
 }
-.footer__link:hover, .footer__link:focus {
+.footer__phone:hover, .footer__phone:focus {
   color: var(--accent-txt-cl);
 }/*# sourceMappingURL=main.css.map */
