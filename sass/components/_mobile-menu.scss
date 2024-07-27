@@ -28,6 +28,9 @@
 }
 
 .menu-container{
+    display: flex;
+    flex-direction: column;
+    
     margin-left: auto;
 
     max-width: 300px;
@@ -36,4 +39,8 @@
     background-color:var(--bg-img);
 
     padding: 90px 50px;
+}
+
+.mobile-list{
+
 }
