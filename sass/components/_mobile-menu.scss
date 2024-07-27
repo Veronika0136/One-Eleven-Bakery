@@ -1,0 +1,39 @@
+.menu-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px ;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
+
+}
+
+.menu-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    width: 100%;
+    height: 100%;
+    
+    background-color: transparent;
+    
+}
+
+.menu-container{
+    margin-left: auto;
+
+    max-width: 300px;
+    height: 100%;
+
+    background-color:var(--bg-img);
+
+    padding: 90px 50px;
+}
