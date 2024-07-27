@@ -19,19 +19,31 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
     <!--CSS-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Header-->
+
     <header class="header">
       <div class="container header__container">
         <a class="logo link" href="./">
-          <img src="./imanges/logo.png" alt="One11 Bakery"
+          <img
+            class="logo__item"
+            src="./imanges/logo.png"
+            alt="One11 Bakery"
+            width="70"
+            height="40"
         /></a>
+        <button class="menu-btn" type="button">
+          <svg width="32" height="32">
+            <use href="./imanges/incons.svg#burger-menu"></use>
+          </svg>
+        </button>
+
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -45,13 +57,10 @@
             </li>
           </ul>
         </nav>
-        <ul class="contaсts__list list">
-          <li class="contaсts__item">
-            <a class="contaсts__link link" href="tel:+380503086282"
-              >+38 (050) 308 62 82</a
-            >
-          </li>
-          <li class="contaсts__item">
+
+        <a class="header__phone link" href="tel:+380503086282">+38 (050) 308 62 82</a>
+        <ul class="socials__list list">
+          <li class="socials__item">
             <a
               class="socials__link link"
               href="https://t.me/One11_Bakery"
@@ -63,7 +72,7 @@
                 <use href="./imanges/incons.svg#icon-telegram"></use></svg
             ></a>
           </li>
-          <li class="contaсts__item">
+          <li class="socials__item">
             <a
               class="socials__link link"
               href="https://www.instagram.com/one11bakery/"
@@ -81,38 +90,10 @@
                 stroke-width="0"
                 viewBox="0 0 32 32"
               >
-                <rect
-                  width="28"
-                  height="28"
-                  x="2"
-                  y="2"
-                  fill="url(#a)"
-                  stroke="none"
-                  rx="6"
-                />
-                <rect
-                  width="28"
-                  height="28"
-                  x="2"
-                  y="2"
-                  fill="url(#b)"
-                  stroke="none"
-                  rx="6"
-                />
-                <rect
-                  width="28"
-                  height="28"
-                  x="2"
-                  y="2"
-                  fill="url(#c)"
-                  stroke="none"
-                  rx="6"
-                />
-                <path
-                  fill="#fff"
-                  stroke="none"
-                  d="M23 10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
-                />
+                <rect width="28" height="28" x="2" y="2" fill="url(#a)" stroke="none" rx="6" />
+                <rect width="28" height="28" x="2" y="2" fill="url(#b)" stroke="none" rx="6" />
+                <rect width="28" height="28" x="2" y="2" fill="url(#c)" stroke="none" rx="6" />
+                <path fill="#fff" stroke="none" d="M23 10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
                 <path
                   fill="#fff"
                   fill-rule="evenodd"
@@ -172,9 +153,12 @@
         </ul>
       </div>
     </header>
+
     <!--Main content-->
     <main>
       <!--Hero-->
+
+      <!--
       <section class="hero section">
         <div class="container text__container">
           <div class="carousel">
@@ -188,8 +172,12 @@
             <div class="slide" style="background-image: url(./imanges/hero/hero3.jpg);"></div>
           </div>  
         </div>
-      </section>
+      </section> 
+      -->
+
       <!--Advantages-->
+
+      <!--
       <section class="advantages section">
         <h2 id="advantages" class="visually-hidden">ПРО НАС</h2>
         <div class="container advantages__container">
@@ -240,7 +228,11 @@
           </ul>
         </div>
       </section>
+      -->
+
       <!--Product range-->
+
+      <!--
       <section class="products section">
         <div class="container products__container">
           <h2 id="products" class="products__title">Ми пропонуюємо</h2>
@@ -421,21 +413,22 @@
         </div>
         </div>
       </section>
+      -->
+
       <!--Delivery-->
+
       <section class="delivery section">
         <div class="container delivery__container">
           <h2 id="delivery" class="delivery__title visually-hidden">ДОСТАВКА</h2>
           <ul class="delivery__list list">
             <li class="delivery__item">
               <h3 class="delivery__text">
-                Безкоштовна доставка в м. Київ та м. Вишгород здійснюється до 5
-                разів на тиждень, в залежності від вашої адреси.
+                Безкоштовна доставка в м. Київ та м. Вишгород здійснюється до 5 разів на тиждень, в
+                залежності від вашої адреси.
               </h3>
             </li>
             <li class="delivery__item">
-              <h3 class="delivery__text text--light">
-                Замовлення приймаються до 19:00.
-              </h3>
+              <h3 class="delivery__text text--light">Замовлення приймаються до 19:00.</h3>
             </li>
             <li class="delivery__item">
               <h3 class="delivery__text">
@@ -446,17 +439,20 @@
         </div>
       </section>
     </main>
+
     <!--Footer-->
+
+    <!--
     <footer class="footer">
       <div class="container footer__container">
         <a class="logo link" href="./"
           ><img src="./imanges/logo.png" alt="One11 Bakery"
         /></a>
-        <a class="footer__link link" href="tel:+380503086282"
+        <a class="footer__phone link" href="tel:+380503086282"
           >+38 (050) 308 62 82</a
         >
-        <ul class="contaсts__list list">
-          <li class="contaсts__item">
+        <ul class="socials__list list">
+          <li class="socials__item">
             <a
               class="socials__link link"
               href="https://t.me/One11_Bakery"
@@ -468,7 +464,7 @@
                 <use href="./imanges/incons.svg#icon-telegram"></use></svg
             ></a>
           </li>
-          <li class="contaсts__item">
+          <li class="socials__item">
             <a
               class="socials__link link"
               href="https://www.instagram.com/one11bakery/"
@@ -577,6 +573,21 @@
         </ul>
       </div>
     </footer>
+   -->
+
+    <!--Mobile menu-->
+    <div class="menu-overlay">
+      <div class="menu-container">
+        <ul class="mobile-list list">
+          <li class="mobile-item ">
+            <a class="mobile-link link" href="#advantages">про нас</a></li>
+          <li class="mobile-item">
+            <a class="mobile-link link" href="#products">меню</a></li>
+          <li class="mobile-item">
+            <a class="mobile-link link" href="#delivery">доставка</a></li>
+        </ul>
+      </div>
+    </div>
 
     <script src="./js/scripts.js"></script>
     <script src="./js/scripts2.js"></script>
