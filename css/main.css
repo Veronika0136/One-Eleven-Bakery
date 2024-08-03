@@ -257,7 +257,7 @@ img {
   text-align: center;
   text-transform: uppercase;
 }
-.mobile-link:hover {
+.mobile-link:hover, .mobile-link:focus {
   color: var(--accent-txt-cl);
 }
 
@@ -267,13 +267,27 @@ img {
   line-height: 2;
   text-align: center;
 }
-.mobile-phone:hover {
+.mobile-phone:hover, .mobile-phone:focus {
   color: var(--accent-txt-cl);
 }
 
 .mobile-socials__list {
   display: flex;
   gap: 80px;
+}
+
+.mobile-socials__link:hover, .mobile-socials__link:focus {
+  fill: var(--main-txt-cl);
+  --color3: var(--main-txt-cl);
+}
+
+.mobile-socials--link:focus .mobile-socials__icon rect {
+  fill: var(--main-txt-cl);
+  --color3: var(--main-txt-cl);
+}
+
+.mobile-socials__icon:hover rect {
+  fill: var(--main-txt-cl);
 }
 
 .menu-close {
