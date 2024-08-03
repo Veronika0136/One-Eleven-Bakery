@@ -217,7 +217,7 @@ img {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  transition: opacity var(--anim-fast), visibility var(--anim-fast);
+  transition: opacity 250ms, visibility 250ms;
 }
 @media screen and (min-width: 768px) {
   .menu-overlay {
@@ -231,16 +231,17 @@ img {
 }
 
 .menu-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: auto;
   max-width: 300px;
   height: 100%;
-  background-color: rgba(255, 0, 0, 0);
+  background-color: black;
   padding: 90px 50px;
   transform: translateX(100%);
-  transition: transform var(--anim-fast);
+  transition: transform 250ms ease-in-out;
 }
 .menu-overlay.is-open .menu-container {
   transform: translateX(0);
