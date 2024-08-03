@@ -80,7 +80,8 @@ position: relative;
   text-align: center;
   text-transform: uppercase;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--accent-txt-cl);
   }
 }
@@ -92,7 +93,8 @@ position: relative;
   line-height: calc(40 / 20);
   text-align: center;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--accent-txt-cl);
   }
 }
@@ -101,6 +103,24 @@ position: relative;
   display: flex;
   gap: 80px;
 }
+
+.mobile-socials__link{
+  
+   &:hover,
+   &:focus {
+    fill: var(--main-txt-cl);
+     --color3: var(--main-txt-cl);}
+}
+
+.mobile-socials--link:focus .mobile-socials__icon rect {
+  fill: var(--main-txt-cl);
+  --color3: var(--main-txt-cl);
+}
+
+.mobile-socials__icon:hover rect {
+  fill: var(--main-txt-cl);
+}
+
 
 .menu-close {
   background-color: transparent;
@@ -113,3 +133,4 @@ position: relative;
   right: 15px;
   padding: 0;
 }
+
