@@ -1,19 +1,12 @@
 .logo {
- 
-
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-left: 0;
+}
 
-  @media screen and (min-widht: 768px) {
-    margin-right: 85px;
-  }
-
-  @media screen and (min-widht: 1200px) {
-    margin-right: 184px;
+@media screen and (min-width: 1200px) {
+  .logo {
     padding-top: 5px;
     padding-bottom: 5px;
   }
 }
-
-
-
