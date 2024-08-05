@@ -33,7 +33,7 @@
         <a class="logo link" href="./">
           <img
             class="logo__item"
-            src="./imanges/logo.png"
+            src="./imanges/base/logo_sm.png"
             alt="One11 Bakery"
             width="70"
             height="40"
@@ -419,8 +419,6 @@
 
       <!--Delivery-->
 
-  
-
       <section class="delivery section">
         <div class="container delivery__container">
           <h2 id="delivery" class="delivery__title visually-hidden">ДОСТАВКА</h2>
@@ -442,21 +440,34 @@
           </ul>
         </div>
       </section>
-
-    
     </main>
 
     <!--Footer-->
 
-    <!--
     <footer class="footer">
       <div class="container footer__container">
-        <a class="logo link" href="./"
-          ><img src="./imanges/logo.png" alt="One11 Bakery"
-        /></a>
-        <a class="footer__phone link" href="tel:+380503086282"
-          >+38 (050) 308 62 82</a
-        >
+        <a class="logo link" href="./">
+        <picture>
+          <source
+            media="min-width:1200px"
+            srcset="./imanges/base/logo_lg.png 1x, ./imanges/base/logo_lg@2x.png 2x"
+            type="image/png"
+          />
+          <source
+            media="min-width:768px"
+            srcset="./imanges/base/logo_md.png 1x, ./imanges/base/logo_md@2x.png 2x"
+            type="image/png"
+          />
+          <source
+            media="max-width:767px"
+            srcset="./imanges/base/logo_sm.png 1x, ./imanges/base/logo_sm@2x.png 2x"
+            type="image/png"
+          />
+          <img src="./imanges/base/logo_sm.png" alt="One11 Bakery" />
+        </picture>
+        </a>
+
+        <a class="footer__phone link" href="tel:+380503086282">+38 (050) 308 62 82</a>
         <ul class="footer__list list">
           <li class="footer__item">
             <a
@@ -488,38 +499,10 @@
                 stroke-width="0"
                 viewBox="0 0 32 32"
               >
-                <rect
-                  width="28"
-                  height="28"
-                  x="2"
-                  y="2"
-                  fill="url(#a)"
-                  stroke="none"
-                  rx="6"
-                />
-                <rect
-                  width="28"
-                  height="28"
-                  x="2"
-                  y="2"
-                  fill="url(#b)"
-                  stroke="none"
-                  rx="6"
-                />
-                <rect
-                  width="28"
-                  height="28"
-                  x="2"
-                  y="2"
-                  fill="url(#c)"
-                  stroke="none"
-                  rx="6"
-                />
-                <path
-                  fill="#fff"
-                  stroke="none"
-                  d="M23 10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
-                />
+                <rect width="28" height="28" x="2" y="2" fill="url(#a)" stroke="none" rx="6" />
+                <rect width="28" height="28" x="2" y="2" fill="url(#b)" stroke="none" rx="6" />
+                <rect width="28" height="28" x="2" y="2" fill="url(#c)" stroke="none" rx="6" />
+                <path fill="#fff" stroke="none" d="M23 10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
                 <path
                   fill="#fff"
                   fill-rule="evenodd"
@@ -579,7 +562,6 @@
         </ul>
       </div>
     </footer>
-  -->
 
     <!--Mobile menu-->
     <div class="menu-overlay js-menu-container">
