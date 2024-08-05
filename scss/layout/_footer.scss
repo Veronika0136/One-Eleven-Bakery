@@ -1,40 +1,63 @@
 .footer__container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.footer__phone {
+  font-size: 10px;
+  line-height: calc(20 / 10);
+  text-align: center;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-cl);
   }
-  
-.footer__phone{
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(32 / 16);
+
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  @media screen and (min-width: 1200px) {
     font-size: 24px;
     line-height: calc(48 / 24);
-    text-align: center;
+
     padding-top: 34px;
     padding-bottom: 34px;
-    margin-left: 60px;
-    margin-right: 315px;
-    
-      &:hover,
-      &:focus {
-    color: var(--accent-txt-cl);}
   }
+}
 
- .footer__list{
+.footer__list {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
- } 
+  margin-right: 0;
 
- .footer__link {
+  @media screen and (min-width:768px){
+    gap: 20px;
+  }
+}
+
+.footer__link {
   padding-top: 34px;
   padding-bottom: 34px;
 
-   &:hover,
-   &:focus {
+  &:hover,
+  &:focus {
     fill: var(--main-txt-cl);
-     --color3: var(--main-txt-cl);}
+    --color3: var(--main-txt-cl);
+  }
+}
 
- }
-
- .footer--link:focus .footer__icon rect {
+.footer--link:focus .footer__icon rect {
   fill: var(--main-txt-cl);
   --color3: var(--main-txt-cl);
 }
