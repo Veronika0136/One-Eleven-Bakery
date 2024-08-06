@@ -41,18 +41,24 @@
   align-items: center;
   margin-right: 0;
 
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     gap: 20px;
   }
 }
 
 .footer__link {
-  padding-top: 34px;
-  padding-bottom: 34px;
+  @media screen and (min-width: 767px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
 
   &:hover,
   &:focus {
     --color3: var(--accent-txt-cl);
   }
 }
-
