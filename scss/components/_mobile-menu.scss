@@ -9,10 +9,18 @@
   cursor: pointer;
 
   margin-left: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
+   
+  &:hover,
+  &:focus {
+    --color3: var(--accent-txt-cl);
+  }
+
 }
 
 .menu-overlay {
@@ -71,6 +79,9 @@ position: relative;
 }
 
 .mobile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   margin-bottom: auto;
 }
 
@@ -80,6 +91,12 @@ position: relative;
   text-align: center;
   text-transform: uppercase;
 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+
+
+
   &:hover,
   &:focus {
     color: var(--accent-txt-cl);
@@ -87,7 +104,10 @@ position: relative;
 }
 
 .mobile-phone {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
 
   font-size: 20px;
   line-height: calc(40 / 20);
@@ -105,20 +125,13 @@ position: relative;
 }
 
 .mobile-socials__link{
-  
-   &:hover,
-   &:focus {
-    fill: var(--main-txt-cl);
-     --color3: var(--main-txt-cl);}
-}
+  padding-top: 30px;
+  padding-bottom: 30px;
 
-.mobile-socials--link:focus .mobile-socials__icon rect {
-  fill: var(--main-txt-cl);
-  --color3: var(--main-txt-cl);
-}
-
-.mobile-socials__icon:hover rect {
-  fill: var(--main-txt-cl);
+  &:hover,
+  &:focus {
+    --color3: var(--accent-txt-cl);
+  }
 }
 
 
@@ -132,5 +145,15 @@ position: relative;
   top: 10px;
   right: 15px;
   padding: 0;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  
+  &:hover,
+  &:focus {
+    --color3: var(--accent-txt-cl);
+  }
+
 }
 
