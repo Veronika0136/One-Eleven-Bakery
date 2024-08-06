@@ -6,7 +6,7 @@
   --main-txt-cl: #f19000;
   --accent-txt-cl: #fff;
   /* bg colors */
-  --bg-img: url(../imanges/base/bg.jpg);
+  --bg-img: url(../images/base/bg.jpg);
 }
 
 .visually-hidden {
@@ -128,12 +128,22 @@ img {
   margin-left: 0;
 }
 
-@media screen and (min-width: 1200px) {
-  .logo {
-    padding-top: 5px;
-    padding-bottom: 5px;
+@media screen and (max-width: 767px) {
+  .logo__item {
+    width: 71px;
   }
 }
+@media screen and (min-width: 768px) {
+  .logo__item {
+    width: 116px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo__item {
+    width: 157px;
+  }
+}
+
 .slide {
   position: absolute;
   width: 100%;
@@ -198,11 +208,16 @@ img {
   border: none;
   cursor: pointer;
   margin-left: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 @media screen and (min-width: 768px) {
   .menu-btn {
     display: none;
   }
+}
+.menu-btn:hover, .menu-btn:focus {
+  --color3: var(--accent-txt-cl);
 }
 
 .menu-overlay {
@@ -247,6 +262,9 @@ img {
 }
 
 .mobile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   margin-bottom: auto;
 }
 
@@ -255,13 +273,17 @@ img {
   line-height: 2;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .mobile-link:hover, .mobile-link:focus {
   color: var(--accent-txt-cl);
 }
 
 .mobile-phone {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-size: 20px;
   line-height: 2;
   text-align: center;
@@ -275,18 +297,12 @@ img {
   gap: 80px;
 }
 
+.mobile-socials__link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .mobile-socials__link:hover, .mobile-socials__link:focus {
-  fill: var(--main-txt-cl);
-  --color3: var(--main-txt-cl);
-}
-
-.mobile-socials--link:focus .mobile-socials__icon rect {
-  fill: var(--main-txt-cl);
-  --color3: var(--main-txt-cl);
-}
-
-.mobile-socials__icon:hover rect {
-  fill: var(--main-txt-cl);
+  --color3: var(--accent-txt-cl);
 }
 
 .menu-close {
@@ -297,6 +313,11 @@ img {
   top: 10px;
   right: 15px;
   padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.menu-close:hover, .menu-close:focus {
+  --color3: var(--accent-txt-cl);
 }
 
 .header__container {
