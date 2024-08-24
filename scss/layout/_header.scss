@@ -14,39 +14,14 @@
 
     padding-top: 34px;
     padding-bottom: 34px;
+
+    margin-right: 20px;
   }
 
   &:hover,
   &:focus {
     color: var(--accent-txt-cl);
   }
-}
-
-.header-mobile {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-  
-    margin-right: 20px;
-
-    &:hover,
-    &:focus {
-      --color3: var(--accent-txt-cl);
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
-}
-
-.header-mobile__icon{
-  
 }
 
 .header__list {
