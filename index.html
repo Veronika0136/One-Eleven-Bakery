@@ -74,7 +74,7 @@
         </nav>
 
         <a class="header__phone link" href="tel:+380503086282">+38 (050) 308 62 82</a>
-      
+
         <ul class="header__list list">
           <li class="header__item">
             <a
@@ -128,58 +128,121 @@
 
       <!--Advantages-->
 
-      
       <section class="advantages section">
         <h2 id="advantages" class="visually-hidden">ПРО НАС</h2>
         <div class="container advantages__container">
           <ul class="advantages__list list">
             <li class="advantages__item">
-              <img
-                class="advantages__img"
-                src="./imanges/advantages/1-img.jpg"
-                alt="Серед великої жмені борошна лежить шматок вершкового масла"
-                width="370"
-                height="310"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/advantages/img-1_lg.jpg    1x,
+                    ./images/advantages/img-1_lg@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/advantages/img-1_md.jpg    1x,
+                    ./images/advantages/img-1_md@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/advantages/img-1_sm.jpg    1x,
+                    ./images/advantages/img-1_sm@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="advantages__img"
+                  src="./images/advantages/img-1_sm.jpg"
+                  alt="Серед великої жмені борошна лежить шматок вершкового масла"
+                />
+              </picture>
+
               <p class="advantages__text">
-                Кожен наш круасан майже на чверть складється зі справжнього
-                вершкового масла з відсотком жирів не менш ніж 82%. Це є догма
-                класичної рецептури, якої ми чітко дотримуємося.
+                Кожен наш круасан майже на чверть складється зі справжнього вершкового масла з
+                відсотком жирів не менш ніж 82%. Це є догма класичної рецептури, якої ми чітко
+                дотримуємося.
               </p>
             </li>
             <li class="advantages__item">
               <p class="advantages__text text--light">
-                На виготовлення крафтового круасана необхідно цілу добу для
-                ретельної та багатоетапної обробки тіста. Це включає
-                замішування, кілька етапів вистоювання, та складання тіста з
-                маслом.
+                На виготовлення крафтового круасана необхідно цілу добу для ретельної та
+                багатоетапної обробки тіста. Це включає замішування, кілька етапів вистоювання, та
+                складання тіста з маслом.
               </p>
-              <img
-                class="advantages__img"
-                src="./imanges/advantages/2-img.jpg"
-                alt="На кухні пекарні дівчина у фартушці скручує тісто у форму краусанів"
-                width="370"
-                height="310"
-              />
+
+              <picture>
+                <source
+                  srcset="
+                    ./images/advantages/img-2_lg.jpg    1x,
+                    ./images/advantages/img-2_lg@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/advantages/img-2_md.jpg    1x,
+                    ./images/advantages/img-2_md@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/advantages/img-2_sm.jpg    1x,
+                    ./images/advantages/img-2_sm@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <img
+                  class="advantages__img"
+                  src="./images/advantages/img-2_sm.jpg"
+                  alt="На кухні пекарні дівчина у фартушці скручує тісто у форму краусанів"
+                />
+              </picture>
             </li>
             <li class="advantages__item">
-              <img
-                class="advantages__img"
-                src="./imanges/advantages/3-img.jpg"
-                alt="У духовці випечені круасани"
-                width="370"
-                height="310"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/advantages/img-3_lg.jpg    1x,
+                    ./images/advantages/img-3_lg@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/advantages/img-3_md.jpg    1x,
+                    ./images/advantages/img-3_md@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/advantages/img-3_sm.jpg    1x,
+                    ./images/advantages/img-3_sm@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="advantages__img"
+                  src="./images/advantages/img-3_sm.jpg"
+                  alt="У духовці випечені круасани"
+                />
+              </picture>
+
               <p class="advantages__text">
-                В результаті ми отримуємо справжній круасан, який володіє такими
-                якостями, як хрусткий ззовні, легкий і повітряний, а головне -
-                соковитий всередині.
+                В результаті ми отримуємо справжній круасан, який володіє такими якостями, як
+                хрусткий ззовні, легкий і повітряний, а головне - соковитий всередині.
               </p>
             </li>
           </ul>
         </div>
       </section>
-    
 
       <!--Product range-->
 
