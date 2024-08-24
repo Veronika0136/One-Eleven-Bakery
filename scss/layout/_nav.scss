@@ -1,45 +1,43 @@
 .nav {
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
-  @media screen and (min-width: 768px){
-
-  margin-right: auto;
-  margin-left: auto;}
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .nav__list {
-  @media screen and (min-width: 768px){
-  display: flex;
-  gap: 30px;}
-
-  @media screen and (min-width: 1200px){
-    gap: 30px;}
-}
-
-
-.nav__link {
-  @media screen and (min-width: 768px){
-  font-size: 14px;
-  line-height: calc(28 / 14);
-  text-align: center;
-  text-transform: uppercase;
-
-  padding-top: 30px;
-  padding-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
   }
 
+  @media screen and (min-width: 1200px) {
+    gap: 30px;
+  }
+}
 
+.nav__link {
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(28 / 14);
+    text-align: center;
+    text-transform: uppercase;
 
-  @media screen and (min-width: 1200px){
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
-  font-size: 20px;
-  line-height: calc(40 / 20);
- 
-  
-  padding-top: 34px;
-  padding-bottom: 34px;}
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: calc(40 / 20);
+
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
 
   &:hover,
   &:focus {
