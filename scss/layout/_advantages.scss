@@ -13,27 +13,24 @@
   }
 }
 
-
 .advantages__img {
   border-radius: 50px;
-  margin-bottom: 25px;
+
   width: 200px;
   height: 180px;
 
-  @media screen and (max-width: 479px){
+  @media screen and (max-width: 479px) {
     width: 125px;
     height: 115px;
-    
+    border-radius: 35px;
   }
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 15px;
     width: 250px;
     height: 220px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 25px;
     width: 370px;
     height: 310px;
   }
@@ -42,13 +39,12 @@
 .advantages__text {
   font-size: 10px;
   line-height: calc(20 / 10);
-  
+  text-align: start;
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
     font-size: 12px;
     line-height: calc(24 / 12);
-    text-align: start;
   }
 
   @media screen and (min-width: 1200px) {
