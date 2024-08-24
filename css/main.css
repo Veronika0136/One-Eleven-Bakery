@@ -337,31 +337,11 @@ img {
     text-align: center;
     padding-top: 34px;
     padding-bottom: 34px;
+    margin-right: 20px;
   }
 }
 .header__phone:hover, .header__phone:focus {
   color: var(--accent-txt-cl);
-}
-
-@media screen and (max-width: 767px) {
-  .header-mobile {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header-mobile {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin-right: 20px;
-  }
-  .header-mobile:hover, .header-mobile:focus {
-    --color3: var(--accent-txt-cl);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header-mobile {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 767px) {
