@@ -1,14 +1,16 @@
 :root {
-    /* font */
-    --main-font: "Roboto Condensed", sans-serif;
-    --second-font: "Lobster", sans-serif;
-  
-    /* txt colors */
-    --main-txt-cl: #f19000;
-    --accent-txt-cl: #fff;
-  
-    /* bg colors */
-    --bg-img: url(../images/base/bg.jpg);
-  }
+  /* font */
+  --main-font: 'Roboto Condensed', sans-serif;
+  --second-font: 'Lobster', sans-serif;
 
-  
+  /* txt colors */
+  --main-txt-cl: #f19000;
+  --accent-txt-cl: #fff;
+
+  /* bg colors */
+  --bg-img: url(../images/base/bg.jpg);
+
+  /* others */
+  --indent: 160px;
+  --itens: 2;
+}
