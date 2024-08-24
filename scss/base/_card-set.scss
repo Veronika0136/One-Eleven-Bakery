@@ -1,0 +1,14 @@
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--indent);
+
+    @media screen and (min-width:768px){
+    justify-content: flex-start;   
+    }
+}
+
+.card-set-item {
+    flex-basis: calc((100% - var(--indent) * (var(--itens) - 1)) / var(--itens));
+}
