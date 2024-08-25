@@ -541,29 +541,78 @@ img {
 }
 
 .products__container {
-  padding-right: 140px;
-  padding-left: 140px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+@media screen and (min-width: 768px) {
+  .products__container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__container {
+    padding-right: 140px;
+    padding-left: 140px;
+  }
 }
 
 .products__title {
-  font-size: 24px;
+  font-size: 14px;
   line-height: 2;
   color: var(--accent-txt-cl);
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .products__title {
+    font-size: 20px;
+    line-height: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__title {
+    font-size: 24px;
+    line-height: 2;
+  }
+}
 
 .products__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  margin-bottom: 40px;
+  gap: 20px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .products__list {
+    gap: 40px;
+    margin-bottom: 40px;
+    justify-content: normal;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__list {
+    gap: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .products__item {
-  width: 280px;
-  height: 350px;
+  width: 249px;
+  height: 260px;
+}
+@media screen and (min-width: 768px) {
+  .products__item {
+    width: 280px;
+    height: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__item {
+    width: 280px;
+    height: 350px;
+  }
 }
 
 .products__img {
@@ -574,7 +623,7 @@ img {
 }
 
 .products__wrapper {
-  height: 100px;
+  height: 75px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border: 1px solid #fff;
@@ -583,7 +632,11 @@ img {
   padding-left: 20px;
   padding-right: 20px;
 }
-
+@media screen and (min-width: 768px) {
+  .products__wrapper {
+    height: 100px;
+  }
+}
 .products__wrapper--last {
   padding-top: 40px;
   height: 100px;
@@ -594,17 +647,31 @@ img {
 }
 
 .products__subtitle {
+  font-size: 12px;
+  line-height: 2;
   text-transform: uppercase;
   color: var(--accent-txt-cl);
   text-align: center;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .products__subtitle {
+    font-size: 16px;
+    line-height: 2;
+  }
+}
 
 .products__text {
-  font-size: 12px;
+  font-size: 9px;
   line-height: 2;
   text-transform: uppercase;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .products__text {
+    font-size: 12px;
+    line-height: 2;
+  }
 }
 
 .delivery__container {
