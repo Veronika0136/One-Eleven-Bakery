@@ -210,21 +210,38 @@ img {
 }
 
 .blok {
-  border: 1px solid #FFFFF00;
+  border: 1px solid #000;
   overflow: hidden;
 }
 
 .blok__anim {
-  animation: running-text 10s linear infinite;
+  animation: none;
+}
+@media screen and (min-width: 768px) {
+  .blok__anim {
+    animation: running-text 10s linear infinite;
+  }
 }
 
 .blok__newstitle {
-  font-size: 24px;
+  font-size: 12px;
   line-height: 2;
   color: var(--accent-txt-cl);
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .blok__newstitle {
+    font-size: 16px;
+    line-height: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blok__newstitle {
+    font-size: 24px;
+    line-height: 2;
+  }
 }
 
 .menu-btn {
