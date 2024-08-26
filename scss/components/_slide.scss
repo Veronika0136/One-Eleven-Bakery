@@ -7,8 +7,11 @@
     opacity: 0;
     transition: opacity 1s ease-in-out;
     transform: translate(-8.05%, -8.05%);
+
+    background-image: url('../images/hero/hero1_sm.jpg');
+    
   }
   
-.slide.active {
+.slide.active { 
     opacity: 1;
   }
