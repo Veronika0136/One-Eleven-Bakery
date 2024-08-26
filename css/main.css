@@ -180,7 +180,6 @@ img {
   opacity: 0;
   transition: opacity 1s ease-in-out;
   transform: translate(-8.05%, -8.05%);
-  background-image: url("../images/hero/hero1_sm.jpg");
 }
 
 .slide.active {
@@ -472,7 +471,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    height: 400px;
+    height: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -491,6 +490,12 @@ img {
   margin-bottom: 250px;
   margin-left: 20px;
   margin-right: 190px;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    margin-left: 50px;
+    margin-right: 300px;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero__title {
@@ -520,6 +525,11 @@ img {
   color: var(--accent-txt-cl);
   text-align: center;
   margin-left: 175px;
+}
+@media screen and (min-width: 480px) {
+  .hero__subtitle {
+    margin-left: 300px;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero__subtitle {
