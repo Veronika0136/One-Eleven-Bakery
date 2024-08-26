@@ -180,6 +180,7 @@ img {
   opacity: 0;
   transition: opacity 1s ease-in-out;
   transform: translate(-8.05%, -8.05%);
+  background-image: url("../images/hero/hero1_sm.jpg");
 }
 
 .slide.active {
@@ -467,29 +468,72 @@ img {
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
-  width: 1200px;
-  height: 670px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 350px;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 670px;
+  }
+}
+
 .hero__title {
   font-family: var(--second-font);
-  font-size: 36px;
+  font-size: 12px;
   line-height: 2;
   color: var(--main-txt-cl);
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 400px;
-  margin-left: 50px;
-  margin-right: 755px;
+  margin-top: 20px;
+  margin-bottom: 250px;
+  margin-left: 20px;
+  margin-right: 190px;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 20px;
+    line-height: 2;
+    margin-top: 35px;
+    margin-bottom: 285px;
+    margin-left: 35px;
+    margin-right: 538px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 36px;
+    line-height: 2;
+    margin-top: 50px;
+    margin-bottom: 400px;
+    margin-left: 50px;
+    margin-right: 755px;
+  }
+}
+
 .hero__subtitle {
   font-family: var(--second-font);
-  font-size: 36px;
+  font-size: 12px;
   line-height: 1;
   color: var(--accent-txt-cl);
   text-align: center;
-  margin-left: 610px;
+  margin-left: 175px;
+}
+@media screen and (min-width: 768px) {
+  .hero__subtitle {
+    font-size: 20px;
+    line-height: 1;
+    margin-left: 493px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__subtitle {
+    font-size: 36px;
+    line-height: 1;
+    margin-left: 610px;
+  }
 }
 
 .advantages__container {
