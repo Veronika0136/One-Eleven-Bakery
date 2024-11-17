@@ -172,7 +172,6 @@ img {
 }
 
 .slide {
-  position: absolute;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -180,6 +179,27 @@ img {
   opacity: 0;
   transition: opacity 1s ease-in-out;
   transform: translate(-8.05%, -8.05%);
+  position: absolute;
+  top: 26px;
+  left: 38px;
+}
+@media screen and (max-width: 479px) {
+  .slide {
+    top: 27px;
+    left: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .slide {
+    top: 37px;
+    left: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slide {
+    top: 55px;
+    left: 100px;
+  }
 }
 
 .slide.active {
@@ -467,7 +487,7 @@ img {
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
-  height: 350px;
+  height: 330px;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -487,7 +507,7 @@ img {
   color: var(--main-txt-cl);
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 250px;
+  margin-bottom: 220px;
   margin-left: 20px;
   margin-right: 190px;
 }
