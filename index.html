@@ -52,7 +52,7 @@
           </picture>
         </a>
 
-        <button class="menu-btn js-open-menu" type="button">
+        <button class="menu-btn menu__icon"  >
           <svg class="menu-icon" width="32" height="32">
             <use href="./images/incons.svg#burger-menu"></use>
           </svg>
@@ -102,6 +102,57 @@
           </li>
         </ul>
       </div>
+    <!--Mobile menu-->
+      <div class="menu-overlay menu__boby ">
+      <div class="menu-container ">
+        <ul class="mobile-list list">
+          <li class="mobile-item">
+            <a class="mobile-link link menu-link" href="#advantages">про нас</a>
+          </li>
+          <li class="mobile-item">
+            <a class="mobile-link link menu-link" href="#products">меню</a>
+          </li>
+          <li class="mobile-item">
+            <a class="mobile-link link menu-link" href="#delivery">доставка</a>
+          </li>
+        </ul>
+        <a class="mobile-phone link menu-link" href="tel:+380503086282">+38 (050) 308 62 82</a>
+        <ul class="mobile-socials__list list">
+          <li class="mobile-socials__item">
+            <a
+              class="mobile-socials__link link menu-link"
+              href="https://t.me/One11_Bakery"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="telegram"
+            >
+              <svg class="mobile-socials__icon" width="32" height="32">
+                <use href="./images/incons.svg#icon-telegram"></use></svg
+            ></a>
+          </li>
+
+          <li class="mobile-socials__item">
+            <a
+              class="mobile-socials__link link menu-link"
+              href="https://www.instagram.com/one11bakery/"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="instagram"
+            >
+              <svg class="mobile-socials__icon" width="32" height="32">
+                <use href="./images/incons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <button class="menu-close" type="button">
+          <svg class="menu-close__icon" width="40" height="40">
+            <use href="./images/incons.svg#menu-close"></use>
+          </svg>
+        </button>
+      </div>
+       </div>
     </header>
 
     <!--Main content-->
@@ -550,57 +601,6 @@
       </div>
     </footer>
 
-    <!--Mobile menu-->
-    <div class="menu-overlay js-menu-container">
-      <div class="menu-container">
-        <ul class="mobile-list list">
-          <li class="mobile-item">
-            <a class="mobile-link link " href="#advantages">про нас</a>
-          </li>
-          <li class="mobile-item">
-            <a class="mobile-link link " href="#products">меню</a>
-          </li>
-          <li class="mobile-item">
-            <a class="mobile-link link " href="#delivery">доставка</a>
-          </li>
-        </ul>
-        <a class="mobile-phone link" href="tel:+380503086282">+38 (050) 308 62 82</a>
-        <ul class="mobile-socials__list list">
-          <li class="mobile-socials__item">
-            <a
-              class="mobile-socials__link link"
-              href="https://t.me/One11_Bakery"
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label="telegram"
-            >
-              <svg class="mobile-socials__icon" width="32" height="32">
-                <use href="./images/incons.svg#icon-telegram"></use></svg
-            ></a>
-          </li>
-
-          <li class="mobile-socials__item">
-            <a
-              class="mobile-socials__link link"
-              href="https://www.instagram.com/one11bakery/"
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label="instagram"
-            >
-              <svg class="mobile-socials__icon" width="32" height="32">
-                <use href="./images/incons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-
-        <button class="menu-close js-close-menu" type="button">
-          <svg class="menu-close__icon" width="40" height="40">
-            <use href="./images/incons.svg#menu-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
 
     <script src="./js/menu.js"></script>
     <script src="./js/scripts.js"></script>
