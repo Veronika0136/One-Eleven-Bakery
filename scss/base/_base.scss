@@ -2,4 +2,8 @@ body {
     font-family: var(--main-font);
     color: var(--main-txt-cl);
     background-image: var(--bg-img);
+
+    &.lock{
+      overflow: hidden;
+    }
   }
