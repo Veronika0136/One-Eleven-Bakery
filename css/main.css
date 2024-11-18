@@ -51,6 +51,9 @@ body {
   color: var(--main-txt-cl);
   background-image: var(--bg-img);
 }
+body.lock {
+  overflow: hidden;
+}
 
 h1,
 h2,
@@ -111,9 +114,9 @@ img {
 }
 @media screen and (min-width: 320px) {
   .container {
-    width: 290px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -314,7 +317,7 @@ img {
   flex-direction: column;
   align-items: center;
   margin-left: auto;
-  max-width: 300px;
+  width: 270px;
   height: 100%;
   background-color: black;
   padding: 90px 50px;
@@ -332,6 +335,13 @@ img {
   margin-bottom: auto;
 }
 
+.mobile-item {
+  display: block;
+}
+.mobile-item:hover, .mobile-item:focus {
+  color: var(--accent-txt-cl);
+}
+
 .mobile-link {
   font-size: 20px;
   line-height: 2;
@@ -339,9 +349,7 @@ img {
   text-transform: uppercase;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-.mobile-link:hover, .mobile-link:focus {
-  color: var(--accent-txt-cl);
+  display: block;
 }
 
 .mobile-phone {
