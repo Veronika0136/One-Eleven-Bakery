@@ -37,13 +37,13 @@
 }
 
 .advantages__text {
-  font-size: 10px;
-  line-height: calc(20 / 10);
+  font-size: 12px;
+  line-height: calc(15 / 12);
   text-align: start;
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
-    font-size: 12px;
+   
     line-height: calc(24 / 12);
   }
 
